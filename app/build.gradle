@@ -10,6 +10,8 @@ android {
         versionCode 2
         versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
     }
     buildTypes {
         release {
@@ -45,4 +47,7 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.11.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
     implementation 'org.jetbrains:annotations-java5:15.0'
+
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'com.orhanobut:logger:1.15'
 }

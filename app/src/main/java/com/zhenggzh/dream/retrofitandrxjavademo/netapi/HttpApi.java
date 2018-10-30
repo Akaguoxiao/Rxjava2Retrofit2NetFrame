@@ -22,10 +22,10 @@ import retrofit2.http.Url;
 
 public interface HttpApi {
     //请填写自己的接口名
-    @POST("")
+    @POST("dailyweather?appKey=b2627dd074c444428b4f759ffe05a651&city=beijing")
     Observable<ResponseBody> getDataForBean(@Body DouBanMovieRequest bean);
     //请填写自己的接口名
-    @GET("")
+    @GET("dailyweather?appKey=b2627dd074c444428b4f759ffe05a651&city=beijing")
     Observable<ResponseBody> getDataForMap(@QueryMap Map<String,Integer> map);
     /**
      * 通过地址下载一个文件
